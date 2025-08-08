@@ -7,6 +7,7 @@ load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 model = genai.GenerativeModel('models/gemma-3-27b-it')
 from templates import ART_TEMPLATE
+import json
 TARGET_SUBJECT = "A man standing in a field of sunflowers, with a bright blue sky and fluffy white clouds in the background."
 
 # The prompt template for the Qwen-VL model
@@ -30,5 +31,12 @@ contents = [
 ]
 
 response = model.generate_content(contents)
+output = {
+    "image_paths": image_paths,
+    "target_subject": TARGET_SUBJECT,
+    "response": response.text
+}
 
+with open("gemma/results/output.json", "w") as f:
+    json.dump(output, f, indent=2)
 print(response.text)
