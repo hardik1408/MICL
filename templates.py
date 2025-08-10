@@ -1,4 +1,4 @@
-TARGET_SUBJECT = "A man standing in a field of sunflowers, with a bright blue sky and fluffy white clouds in the background."
+TARGET_SUBJECT = "A young girl with a slight dark complexion, wearing an olive dress with red dots, sitting on a chair. The background is half purple and half yellow."
 
 ART_TEMPLATE = f"""
 You are an expert art critic. The following images all share a common artistic style.
