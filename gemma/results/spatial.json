@@ -1,0 +1,12 @@
+{
+  "image_paths": [
+    "dataset/spatial/1.jpeg",
+    "dataset/spatial/2.jpeg"
+  ],
+  "caption": [
+    "The cat is behind the laptop.",
+    "The cake is at the edge of the dining table."
+  ],
+  "target_subject": "The cow is ahead of the man on the road",
+  "response": "The cow is ahead of the man on the road."
+}
