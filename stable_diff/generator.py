@@ -13,7 +13,7 @@ output_format = "jpeg" #@param ["jpeg", "png"]
 host = f"https://api.stability.ai/v2beta/stable-image/generate/sd3"
 
 # Load prompt from JSON file if available
-json_path = "gemma/results/artist_frida.json"
+json_path = "gemma/results/character.json"
 if os.path.exists(json_path):
     with open(json_path, "r") as f:
         data = json.load(f)
@@ -42,7 +42,7 @@ if finish_reason == 'CONTENT_FILTERED':
     raise Warning("Generation failed NSFW classifier")
 
 # Save and display result
-generated = f"stable_diff/generated_images/gemma/generated_{seed}.{output_format}"
+generated = f"stable_diff/generated_images/gemma/character/generated_{seed}.{output_format}"
 with open(generated, "wb") as f:
     f.write(output_image)
 print(f"Saved image {generated}")
