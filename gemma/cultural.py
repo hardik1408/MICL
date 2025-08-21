@@ -3,6 +3,7 @@ import google.generativeai as genai
 from PIL import Image
 from pathlib import Path
 from dotenv import load_dotenv
+import json
 load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 model = genai.GenerativeModel('models/gemma-3-27b-it')
@@ -30,5 +31,12 @@ contents = [
 ]
 
 response = model.generate_content(contents)
+output = {
+    "image_paths": image_paths,
+    "target_subject": TARGET_SUBJECT,
+    "response": response.text
+}
 
+with open("gemma/results/cultural.json", "w") as f:
+    json.dump(output, f, indent=2)
 print(response.text)

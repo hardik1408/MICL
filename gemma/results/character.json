@@ -1,12 +1,12 @@
 {
   "image_paths": [
-    "dataset/spatial/1.jpeg",
-    "dataset/spatial/2.jpeg"
+    "dataset/character/1.jpeg",
+    "dataset/character/2.jpeg"
   ],
   "caption": [
     "The cat is behind the laptop.",
     "The cake is at the edge of the dining table."
   ],
-  "target_subject": "The cow is ahead of the man on the road",
-  "response": "a black cat with long fur, sitting on a bustling city street during the evening rush hour, photorealistic, detailed, cinematic lighting, depth of field, 8k, --ar 3:2 --style expressive"
+  "target_subject": "a bustling city street during the evening rush hour",
+  "response": "a photorealistic portrait of a man with short, dark brown hair, a neatly trimmed dark beard, and light brown eyes, slightly tanned skin, a strong jawline, and a small mole near his left cheek, visible tattoos on his left arm, wearing casual clothing, standing on a bustling city street during the evening rush hour, blurred background of city lights and pedestrians, cinematic lighting, 8k, highly detailed, realistic skin texture, --ar 3:2 --style expressive"
 }
