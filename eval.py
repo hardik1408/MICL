@@ -3,6 +3,9 @@ from rouge_score import rouge_scorer
 from bert_score import score as bert_score
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
+import argparse
+import json
+import os
 
 embedder = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
 
@@ -31,10 +34,29 @@ def compute_cosine_similarity(reference: str, candidate: str) -> float:
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Run the VLM experiment with ICL.")
+    parser.add_argument("--dataset", type=str, help="Path to the dataset file.")
+    parser.add_argument("--output-dir" , type=str, default="eval", help="Directory to save the output file.")
+    args = parser.parse_args()
     ref = "A dog is playing with a ball in the park."
     cand = "A puppy plays with a toy outside."
+    with open(args.dataset, "r") as f:
+        data = json.load(f)
+    results = []
+    for item in data:
+        result = {
+            "image_path": item["image_path"],
+            "example_path": item["example_path"],
+            "BLEU": compute_bleu(item["original_description"], item["generated_description"]),
+            "ROUGE": compute_rouge(item["original_description"], item["generated_description"]),
+            "BERTScore": compute_bertscore(item["original_description"], item["generated_description"]),
+            "Cosine Similarity": float(compute_cosine_similarity(item["original_description"], item["generated_description"]))
+        }
+        results.append(result)
+    file_name = os.path.splitext(os.path.basename(args.dataset))[0]
+    output_path = f"{args.output_dir}/eval_{file_name}.json"
 
-    print("BLEU:", compute_bleu(ref, cand))
-    print("ROUGE:", compute_rouge(ref, cand))
-    print("BERTScore:", compute_bertscore(ref, cand))
-    print("Cosine Similarity:", compute_cosine_similarity(ref, cand))
+    with open(output_path, "w") as f:
+        json.dump(results, f, indent=4)
+    
+    print("Results saved")
