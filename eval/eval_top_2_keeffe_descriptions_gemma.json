@@ -1,0 +1,30 @@
+[
+    {
+        "image_path": "dataset/artist/keeffe/red-canna.jpg",
+        "example_path": [
+            "dataset/artist/keeffe/series-i-no-3.jpg",
+            "dataset/artist/keeffe/light-of-iris.jpg"
+        ],
+        "BLEU": 0.050498907545394,
+        "ROUGE": {
+            "rouge1": 0.38966202783300197,
+            "rougeL": 0.1908548707753479
+        },
+        "BERTScore": 0.14644426107406616,
+        "Cosine Similarity": 0.7534136772155762
+    },
+    {
+        "image_path": "dataset/artist/keeffe/blue-morning-glories.jpg",
+        "example_path": [
+            "dataset/artist/keeffe/series-i-no-3.jpg",
+            "dataset/artist/keeffe/grey-line-with-black-blue.jpg"
+        ],
+        "BLEU": 0.029790408389566703,
+        "ROUGE": {
+            "rouge1": 0.36435643564356435,
+            "rougeL": 0.17821782178217824
+        },
+        "BERTScore": 0.07031702250242233,
+        "Cosine Similarity": 0.6842731237411499
+    }
+]

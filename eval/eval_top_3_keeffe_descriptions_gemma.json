@@ -1,0 +1,32 @@
+[
+    {
+        "image_path": "dataset/artist/keeffe/red-canna.jpg",
+        "example_path": [
+            "dataset/artist/keeffe/light-of-iris.jpg",
+            "dataset/artist/keeffe/series-i-no-3.jpg",
+            "dataset/artist/keeffe/jimson-weed.jpg"
+        ],
+        "BLEU": 0.03678747699875316,
+        "ROUGE": {
+            "rouge1": 0.34833659491193736,
+            "rougeL": 0.17221135029354206
+        },
+        "BERTScore": 0.1206909790635109,
+        "Cosine Similarity": 0.7186940908432007
+    },
+    {
+        "image_path": "dataset/artist/keeffe/blue-morning-glories.jpg",
+        "example_path": [
+            "dataset/artist/keeffe/series-i-no-3.jpg",
+            "dataset/artist/keeffe/grey-line-with-black-blue.jpg",
+            "dataset/artist/keeffe/oriental-poppies.jpg"
+        ],
+        "BLEU": 0.023420266001093863,
+        "ROUGE": {
+            "rouge1": 0.3501006036217304,
+            "rougeL": 0.18913480885311873
+        },
+        "BERTScore": 0.0757497102022171,
+        "Cosine Similarity": 0.6840832233428955
+    }
+]
