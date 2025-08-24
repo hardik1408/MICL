@@ -1,0 +1,47 @@
+[
+    {
+        "image_path": "picasso/alicante-view-of-boats.jpg",
+        "example_path": [
+            "picasso/girl-in-front-of-mirror-1932.jpg",
+            "picasso/portrait-of-the-artist-1903.jpg",
+            "picasso/family-of-acrobats-jugglers-1905.jpg"
+        ],
+        "BLEU": 0.01771166584911538,
+        "ROUGE": {
+            "rouge1": 0.36678200692041524,
+            "rougeL": 0.19031141868512114
+        },
+        "BERTScore": 0.07829459756612778,
+        "Cosine Similarity": 0.6240976452827454
+    },
+    {
+        "image_path": "picasso/woman-with-blue-hat-1901.jpg",
+        "example_path": [
+            "picasso/dora-maar-1939.jpg",
+            "picasso/a-boy-with-pipe-1905.jpg",
+            "picasso/portrait-of-the-artist-1903.jpg"
+        ],
+        "BLEU": 0.020462639217422734,
+        "ROUGE": {
+            "rouge1": 0.3207920792079208,
+            "rougeL": 0.1782178217821782
+        },
+        "BERTScore": 0.0888092890381813,
+        "Cosine Similarity": 0.6543408036231995
+    },
+    {
+        "image_path": "picasso/an-actor-1904.jpg",
+        "example_path": [
+            "picasso/child-with-dove-1901.jpg",
+            "picasso/dora-maar-1939.jpg",
+            "picasso/portrait-of-the-artist-1903.jpg"
+        ],
+        "BLEU": 0.028954665899776008,
+        "ROUGE": {
+            "rouge1": 0.3793738489871087,
+            "rougeL": 0.19889502762430944
+        },
+        "BERTScore": 0.12366778403520584,
+        "Cosine Similarity": 0.6912244558334351
+    }
+]

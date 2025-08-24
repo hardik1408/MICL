@@ -1,0 +1,44 @@
+[
+    {
+        "image_path": "picasso/alicante-view-of-boats.jpg",
+        "example_path": [
+            "picasso/portrait-of-the-artist-1903.jpg",
+            "picasso/fairground-1900.jpg"
+        ],
+        "BLEU": 0.043576820516405546,
+        "ROUGE": {
+            "rouge1": 0.43863179074446673,
+            "rougeL": 0.21327967806841047
+        },
+        "BERTScore": 0.136710062623024,
+        "Cosine Similarity": 0.6969963312149048
+    },
+    {
+        "image_path": "picasso/woman-with-blue-hat-1901.jpg",
+        "example_path": [
+            "picasso/portrait-of-the-artist-1903.jpg",
+            "picasso/blue-nude-c-1902-u-l-e77lc0.jpg"
+        ],
+        "BLEU": 0.026137570956483704,
+        "ROUGE": {
+            "rouge1": 0.3721881390593047,
+            "rougeL": 0.20040899795501022
+        },
+        "BERTScore": 0.12528985738754272,
+        "Cosine Similarity": 0.6122283935546875
+    },
+    {
+        "image_path": "picasso/an-actor-1904.jpg",
+        "example_path": [
+            "picasso/blue-nude-c-1902-u-l-e77lc0.jpg",
+            "picasso/the-death-of-casagemas-1901.jpg"
+        ],
+        "BLEU": 0.047055540633567934,
+        "ROUGE": {
+            "rouge1": 0.37573385518590996,
+            "rougeL": 0.20352250489236792
+        },
+        "BERTScore": 0.10937920212745667,
+        "Cosine Similarity": 0.7274011969566345
+    }
+]

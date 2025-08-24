@@ -1,0 +1,50 @@
+[
+    {
+        "image_path": "picasso/alicante-view-of-boats.jpg",
+        "example_path": [
+            "picasso/the-death-of-casagemas-1901.jpg",
+            "picasso/blue-nude-c-1902-u-l-e77lc0.jpg",
+            "picasso/dora-maar-1939.jpg",
+            "picasso/fairground-1900.jpg"
+        ],
+        "BLEU": 0.033886366009973516,
+        "ROUGE": {
+            "rouge1": 0.38476190476190475,
+            "rougeL": 0.19047619047619047
+        },
+        "BERTScore": 0.10877106338739395,
+        "Cosine Similarity": 0.6892900466918945
+    },
+    {
+        "image_path": "picasso/woman-with-blue-hat-1901.jpg",
+        "example_path": [
+            "picasso/the-death-of-casagemas-1901.jpg",
+            "picasso/child-with-dove-1901.jpg",
+            "picasso/girl-in-front-of-mirror-1932.jpg",
+            "picasso/blue-nude-c-1902-u-l-e77lc0.jpg"
+        ],
+        "BLEU": 0.015494883550603942,
+        "ROUGE": {
+            "rouge1": 0.32432432432432434,
+            "rougeL": 0.17374517374517376
+        },
+        "BERTScore": 0.0502764917910099,
+        "Cosine Similarity": 0.6722432971000671
+    },
+    {
+        "image_path": "picasso/an-actor-1904.jpg",
+        "example_path": [
+            "picasso/the-death-of-casagemas-1901.jpg",
+            "picasso/family-of-acrobats-jugglers-1905.jpg",
+            "picasso/portrait-of-the-artist-1903.jpg",
+            "picasso/girl-in-front-of-mirror-1932.jpg"
+        ],
+        "BLEU": 0.03278085456558961,
+        "ROUGE": {
+            "rouge1": 0.38649155722326456,
+            "rougeL": 0.21013133208255158
+        },
+        "BERTScore": 0.11207418143749237,
+        "Cosine Similarity": 0.6323116421699524
+    }
+]
