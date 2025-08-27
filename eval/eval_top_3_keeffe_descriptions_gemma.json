@@ -1,32 +1,194 @@
 [
     {
         "image_path": "dataset/artist/keeffe/red-canna.jpg",
-        "example_path": [
-            "dataset/artist/keeffe/light-of-iris.jpg",
-            "dataset/artist/keeffe/series-i-no-3.jpg",
-            "dataset/artist/keeffe/jimson-weed.jpg"
+        "example_paths": [
+            "dataset/artist/keeffe/from-the-lake.jpg",
+            "dataset/artist/keeffe/grey-line-with-black-blue.jpg",
+            "dataset/artist/keeffe/series-i-no-3.jpg"
         ],
-        "BLEU": 0.03678747699875316,
+        "permutation_index": 0,
+        "BLEU": 0.03538243728039962,
         "ROUGE": {
-            "rouge1": 0.34833659491193736,
-            "rougeL": 0.17221135029354206
+            "rouge1": 0.37566137566137564,
+            "rougeL": 0.17460317460317465
         },
-        "BERTScore": 0.1206909790635109,
-        "Cosine Similarity": 0.7186940908432007
+        "BERTScore": 0.17335379123687744,
+        "Cosine Similarity": 0.6031924486160278
+    },
+    {
+        "image_path": "dataset/artist/keeffe/red-canna.jpg",
+        "example_paths": [
+            "dataset/artist/keeffe/from-the-lake.jpg",
+            "dataset/artist/keeffe/series-i-no-3.jpg",
+            "dataset/artist/keeffe/grey-line-with-black-blue.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.0644325539561991,
+        "ROUGE": {
+            "rouge1": 0.412532637075718,
+            "rougeL": 0.2245430809399478
+        },
+        "BERTScore": 0.18551209568977356,
+        "Cosine Similarity": 0.6554552912712097
+    },
+    {
+        "image_path": "dataset/artist/keeffe/red-canna.jpg",
+        "example_paths": [
+            "dataset/artist/keeffe/grey-line-with-black-blue.jpg",
+            "dataset/artist/keeffe/from-the-lake.jpg",
+            "dataset/artist/keeffe/series-i-no-3.jpg"
+        ],
+        "permutation_index": 2,
+        "BLEU": 0.02665356028982458,
+        "ROUGE": {
+            "rouge1": 0.3804347826086956,
+            "rougeL": 0.17934782608695649
+        },
+        "BERTScore": 0.15602943301200867,
+        "Cosine Similarity": 0.6318724751472473
+    },
+    {
+        "image_path": "dataset/artist/keeffe/red-canna.jpg",
+        "example_paths": [
+            "dataset/artist/keeffe/grey-line-with-black-blue.jpg",
+            "dataset/artist/keeffe/series-i-no-3.jpg",
+            "dataset/artist/keeffe/from-the-lake.jpg"
+        ],
+        "permutation_index": 3,
+        "BLEU": 0.03465586403812437,
+        "ROUGE": {
+            "rouge1": 0.43799472295514513,
+            "rougeL": 0.1899736147757256
+        },
+        "BERTScore": 0.2102927714586258,
+        "Cosine Similarity": 0.6070177555084229
+    },
+    {
+        "image_path": "dataset/artist/keeffe/red-canna.jpg",
+        "example_paths": [
+            "dataset/artist/keeffe/series-i-no-3.jpg",
+            "dataset/artist/keeffe/from-the-lake.jpg",
+            "dataset/artist/keeffe/grey-line-with-black-blue.jpg"
+        ],
+        "permutation_index": 4,
+        "BLEU": 0.030664899811652033,
+        "ROUGE": {
+            "rouge1": 0.40214477211796246,
+            "rougeL": 0.19302949061662197
+        },
+        "BERTScore": 0.1961037814617157,
+        "Cosine Similarity": 0.6067703366279602
+    },
+    {
+        "image_path": "dataset/artist/keeffe/red-canna.jpg",
+        "example_paths": [
+            "dataset/artist/keeffe/series-i-no-3.jpg",
+            "dataset/artist/keeffe/grey-line-with-black-blue.jpg",
+            "dataset/artist/keeffe/from-the-lake.jpg"
+        ],
+        "permutation_index": 5,
+        "BLEU": 0.032428504592754905,
+        "ROUGE": {
+            "rouge1": 0.3941176470588236,
+            "rougeL": 0.1823529411764706
+        },
+        "BERTScore": 0.17054402828216553,
+        "Cosine Similarity": 0.638496458530426
     },
     {
         "image_path": "dataset/artist/keeffe/blue-morning-glories.jpg",
-        "example_path": [
+        "example_paths": [
             "dataset/artist/keeffe/series-i-no-3.jpg",
-            "dataset/artist/keeffe/grey-line-with-black-blue.jpg",
-            "dataset/artist/keeffe/oriental-poppies.jpg"
+            "dataset/artist/keeffe/from-the-lake.jpg",
+            "dataset/artist/keeffe/jimson-weed.jpg"
         ],
-        "BLEU": 0.023420266001093863,
+        "permutation_index": 0,
+        "BLEU": 0.019390151575630114,
         "ROUGE": {
-            "rouge1": 0.3501006036217304,
-            "rougeL": 0.18913480885311873
+            "rouge1": 0.37606837606837606,
+            "rougeL": 0.22792022792022792
         },
-        "BERTScore": 0.0757497102022171,
-        "Cosine Similarity": 0.6840832233428955
+        "BERTScore": 0.16150309145450592,
+        "Cosine Similarity": 0.6483842134475708
+    },
+    {
+        "image_path": "dataset/artist/keeffe/blue-morning-glories.jpg",
+        "example_paths": [
+            "dataset/artist/keeffe/series-i-no-3.jpg",
+            "dataset/artist/keeffe/jimson-weed.jpg",
+            "dataset/artist/keeffe/from-the-lake.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.035845845879069665,
+        "ROUGE": {
+            "rouge1": 0.3798882681564245,
+            "rougeL": 0.2569832402234637
+        },
+        "BERTScore": 0.18331578373908997,
+        "Cosine Similarity": 0.6672037839889526
+    },
+    {
+        "image_path": "dataset/artist/keeffe/blue-morning-glories.jpg",
+        "example_paths": [
+            "dataset/artist/keeffe/from-the-lake.jpg",
+            "dataset/artist/keeffe/series-i-no-3.jpg",
+            "dataset/artist/keeffe/jimson-weed.jpg"
+        ],
+        "permutation_index": 2,
+        "BLEU": 0.03928374956660769,
+        "ROUGE": {
+            "rouge1": 0.44910179640718567,
+            "rougeL": 0.23952095808383234
+        },
+        "BERTScore": 0.222892165184021,
+        "Cosine Similarity": 0.7024835348129272
+    },
+    {
+        "image_path": "dataset/artist/keeffe/blue-morning-glories.jpg",
+        "example_paths": [
+            "dataset/artist/keeffe/from-the-lake.jpg",
+            "dataset/artist/keeffe/jimson-weed.jpg",
+            "dataset/artist/keeffe/series-i-no-3.jpg"
+        ],
+        "permutation_index": 3,
+        "BLEU": 0.07096967433928116,
+        "ROUGE": {
+            "rouge1": 0.4061538461538461,
+            "rougeL": 0.22153846153846155
+        },
+        "BERTScore": 0.20720860362052917,
+        "Cosine Similarity": 0.6604845523834229
+    },
+    {
+        "image_path": "dataset/artist/keeffe/blue-morning-glories.jpg",
+        "example_paths": [
+            "dataset/artist/keeffe/jimson-weed.jpg",
+            "dataset/artist/keeffe/series-i-no-3.jpg",
+            "dataset/artist/keeffe/from-the-lake.jpg"
+        ],
+        "permutation_index": 4,
+        "BLEU": 0.025238029634937098,
+        "ROUGE": {
+            "rouge1": 0.3768115942028986,
+            "rougeL": 0.2028985507246377
+        },
+        "BERTScore": 0.1599714159965515,
+        "Cosine Similarity": 0.6476353406906128
+    },
+    {
+        "image_path": "dataset/artist/keeffe/blue-morning-glories.jpg",
+        "example_paths": [
+            "dataset/artist/keeffe/jimson-weed.jpg",
+            "dataset/artist/keeffe/from-the-lake.jpg",
+            "dataset/artist/keeffe/series-i-no-3.jpg"
+        ],
+        "permutation_index": 5,
+        "BLEU": 0.034968897547664884,
+        "ROUGE": {
+            "rouge1": 0.3893805309734514,
+            "rougeL": 0.21238938053097342
+        },
+        "BERTScore": 0.17835456132888794,
+        "Cosine Similarity": 0.6419563293457031
     }
 ]

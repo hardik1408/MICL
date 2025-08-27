@@ -1,0 +1,122 @@
+[
+    {
+        "image_path": "dataset/artist/picasso/Le-reve-1932.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/guernica.jpg",
+            "dataset/artist/picasso/an-actor-1904.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.028320434103219577,
+        "ROUGE": {
+            "rouge1": 0.3829787234042554,
+            "rougeL": 0.1884498480243161
+        },
+        "BERTScore": 0.15192674100399017,
+        "Cosine Similarity": 0.6064414978027344
+    },
+    {
+        "image_path": "dataset/artist/picasso/Le-reve-1932.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/an-actor-1904.jpg",
+            "dataset/artist/picasso/guernica.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.02586908349695345,
+        "ROUGE": {
+            "rouge1": 0.35911602209944754,
+            "rougeL": 0.18232044198895025
+        },
+        "BERTScore": 0.09303274750709534,
+        "Cosine Similarity": 0.554938554763794
+    },
+    {
+        "image_path": "dataset/artist/picasso/a-boy-with-pipe-1905.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/fairground-1900.jpg",
+            "dataset/artist/picasso/family-of-acrobats-jugglers-1905.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.018292452690628246,
+        "ROUGE": {
+            "rouge1": 0.4512534818941505,
+            "rougeL": 0.18941504178272978
+        },
+        "BERTScore": 0.21279102563858032,
+        "Cosine Similarity": 0.622285783290863
+    },
+    {
+        "image_path": "dataset/artist/picasso/a-boy-with-pipe-1905.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/family-of-acrobats-jugglers-1905.jpg",
+            "dataset/artist/picasso/fairground-1900.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.023273638533580228,
+        "ROUGE": {
+            "rouge1": 0.3756906077348066,
+            "rougeL": 0.18232044198895025
+        },
+        "BERTScore": 0.1811925768852234,
+        "Cosine Similarity": 0.6102287769317627
+    },
+    {
+        "image_path": "dataset/artist/picasso/child-with-dove-1901.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/portrait-of-the-artist-1903.jpg",
+            "dataset/artist/picasso/an-actor-1904.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.028067323778224778,
+        "ROUGE": {
+            "rouge1": 0.367816091954023,
+            "rougeL": 0.16091954022988506
+        },
+        "BERTScore": 0.1561131328344345,
+        "Cosine Similarity": 0.5309644341468811
+    },
+    {
+        "image_path": "dataset/artist/picasso/child-with-dove-1901.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/an-actor-1904.jpg",
+            "dataset/artist/picasso/portrait-of-the-artist-1903.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.028610938102363884,
+        "ROUGE": {
+            "rouge1": 0.3603603603603604,
+            "rougeL": 0.1801801801801802
+        },
+        "BERTScore": 0.1567269265651703,
+        "Cosine Similarity": 0.43811047077178955
+    },
+    {
+        "image_path": "dataset/artist/picasso/weeping-woman.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/an-actor-1904.jpg",
+            "dataset/artist/picasso/guernica.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.021573127803402273,
+        "ROUGE": {
+            "rouge1": 0.375,
+            "rougeL": 0.19642857142857145
+        },
+        "BERTScore": 0.22905166447162628,
+        "Cosine Similarity": 0.634674072265625
+    },
+    {
+        "image_path": "dataset/artist/picasso/weeping-woman.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/guernica.jpg",
+            "dataset/artist/picasso/an-actor-1904.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.026368997122534585,
+        "ROUGE": {
+            "rouge1": 0.34626865671641793,
+            "rougeL": 0.17910447761194026
+        },
+        "BERTScore": 0.22191673517227173,
+        "Cosine Similarity": 0.6042832732200623
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "image_path": "dataset/artist/picasso/Le-reve-1932.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/an-actor-1904.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.030428115404104783,
+        "ROUGE": {
+            "rouge1": 0.3739837398373983,
+            "rougeL": 0.17344173441734417
+        },
+        "BERTScore": 0.1528823971748352,
+        "Cosine Similarity": 0.6217983961105347
+    },
+    {
+        "image_path": "dataset/artist/picasso/a-boy-with-pipe-1905.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/dora-maar-1939.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.026147316834016988,
+        "ROUGE": {
+            "rouge1": 0.3766233766233766,
+            "rougeL": 0.17532467532467533
+        },
+        "BERTScore": 0.1421201378107071,
+        "Cosine Similarity": 0.6274024248123169
+    },
+    {
+        "image_path": "dataset/artist/picasso/child-with-dove-1901.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/alicante-view-of-boats.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.02179383329997867,
+        "ROUGE": {
+            "rouge1": 0.3893805309734513,
+            "rougeL": 0.19469026548672566
+        },
+        "BERTScore": 0.17093639075756073,
+        "Cosine Similarity": 0.600936770439148
+    },
+    {
+        "image_path": "dataset/artist/picasso/weeping-woman.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/woman-with-blue-hat-1901.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.019338612734632013,
+        "ROUGE": {
+            "rouge1": 0.35451505016722407,
+            "rougeL": 0.1939799331103679
+        },
+        "BERTScore": 0.21960847079753876,
+        "Cosine Similarity": 0.6499422788619995
+    }
+]
