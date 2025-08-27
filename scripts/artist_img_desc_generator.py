@@ -42,7 +42,7 @@ for image_path in image_paths:
     style_description = description_response.text.strip()
     caption_response = model.generate_content([CAPTION_PROMPT, image])
     caption = caption_response.text.strip()
-    output_image_path = f"{artist_name}/{Path(image_path).name}"
+    output_image_path = f"dataset/artist/{artist_name}/{Path(image_path).name}"
     results.append({
         "image_path": output_image_path,
         "caption": caption,
