@@ -1,19 +1,18 @@
 TARGET_SUBJECT = "A young girl with a slight dark complexion, wearing an olive dress with red dots, sitting on a chair. The background is half purple and half yellow."
 
 ART_TEMPLATE = f"""
-You are an expert art critic. The following images all share a common artistic style.
-Analyze these images and then write a single, detailed paragraph that describes this style.
-Focus on color, light, texture, and mood. This paragraph will be used as a prompt for an AI image generator.
-Do not mention the specific subjects in the images (like stars, sunflowers, or people). ONLY RETURN THE FINAL PROMPT, NO OTHER TEXT.
-Finally, combine your style description with the following subject to create an image. The image should resemble this subject completely: '{TARGET_SUBJECT}'.
+You are shown several reference paintings by an artist, each with a caption. From these, learn the artist’s style—their use of color, composition, mood, textures, and recurring themes. 
+Then, given a new test caption, generate a detailed description of what the painting would look like if created by the same artist. 
+Your description should go beyond the literal subject, capturing atmosphere, stylistic traits, and symbolic choices characteristic of the artist.
+Do not add any redundant text or any kind of heading, just give the detailed description.
 """
-TARGET_DESCRIPTION = "A serene landscape with rolling hills and a calm river under a clear sky."
+TARGET_DESCRIPTION = "A girl is sitting in a park. The horse is on her left."
 SPATIAL_TEMPLATE = f"""
 You are an expert at creating prompts for literal-minded AI image generators.
 Your task is to analyze the simple, factual descriptions provided with each image. Notice how each description precisely states the spatial relationship between objects (e.g., on, under, beside) to form a clear instruction for an image generator.
-Your goal is to create a new prompt that follows this exact same style of direct, factual instruction.
+Your goal is to create a new prompt that follows this exact same style of direct, factual instruction, along with a description of the image setting similar to the examples.
 Based on the examples, create a single-sentence prompt for an AI image generator to create an image of: '{TARGET_DESCRIPTION}'.
-ONLY RETURN THE FINAL PROMPT. Do not add any other text or creative details.
+ONLY RETURN THE FINAL PROMPT. Do not add any other text or creative details. The caption of the images are as follows
 """
 TARGET_CONTEXT = "a bustling city street during the evening rush hour"
 CHARACTER_TEMPLATE = f"""

@@ -9,6 +9,7 @@ from gemma.utils import *
 import argparse
 from dotenv import load_dotenv
 load_dotenv()
+from templates import ART_TEMPLATE
 API_KEY = os.getenv("GOOGLE_API_KEY")
 
 MODEL_NAME = "models/gemma-3-27b-it" 
@@ -24,17 +25,6 @@ RANDOM_STATE = 42        # For reproducible train/test splits
 
 
 def generate_vlm_description(prompt_parts, model_name=MODEL_NAME):
-    """
-    Interacts with the VLM to generate a description.
-    
-    Args:
-        prompt_parts (list): A list containing text strings and PIL Image objects.
-        model_name (str): The name of the model to use.
-        
-    Returns:
-        str: The generated text description or an error message.
-    """
-
     try:
         model = genai.GenerativeModel(model_name)
         response = model.generate_content(prompt_parts)
@@ -47,10 +37,13 @@ def main():
     parser = argparse.ArgumentParser(description="Run the VLM experiment with ICL.")
     parser.add_argument("--dataset", type=str, help="Path to the dataset file.")
     parser.add_argument("--k_shots" , type=int, help="Number of in-context examples to provide.")
+    parser.add_argument("--output-dir", type=str, default="generated",help="Directory to save output files.")
     args = parser.parse_args()
 
     DATASET_PATH = args.dataset
     K_SHOTS = args.k_shots
+    OUTPUT_DIR = args.output_dir
+
     configure_api(API_KEY)
     dataset = load_dataset(DATASET_PATH)
     if not dataset:
@@ -74,9 +67,7 @@ def main():
             in_context_examples = random.sample(train_data, K_SHOTS)
 
         # Build the complex ICL prompt
-        icl_prompt = [
-            "You are an expert art critic. The following images all share a common artistic style. Analyze these images and then write a single, detailed paragraph that describes this style. Focus on color, light, texture, and mood.\n\n"
-        ]
+        icl_prompt = [ART_TEMPLATE]
         examples_path = []
         for i, example in enumerate(in_context_examples):
             try:
@@ -107,7 +98,7 @@ def main():
         })
 
     artist_name = os.path.splitext(os.path.basename(args.dataset))[0]
-    output_path = f"top_{args.k_shots}_{artist_name}_gemma.json"
+    output_path = f"{OUTPUT_DIR}/top_{args.k_shots}_{artist_name}_gemma.json"
     with open(output_path, 'w') as f:
         json.dump(results, f, indent=4)
         
