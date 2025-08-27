@@ -2,6 +2,7 @@ import google.generativeai as genai
 import os
 import json
 import random
+import itertools
 from PIL import Image
 from sklearn.model_selection import train_test_split
 from tqdm import tqdm # For a nice progress bar
@@ -56,46 +57,74 @@ def main():
 
     results = []
     
+
     for test_item in tqdm(test_data, desc=" Processing Test Examples"):
         test_image_path = test_item["image_path"]
         test_caption = test_item["caption"]
-        
+
+        # Choose the shots
         if len(train_data) < K_SHOTS:
             print(f"Warning: Not enough training data ({len(train_data)}) to select {K_SHOTS} shots. Using all available.")
-            in_context_examples = train_data
+            selected_examples = train_data
         else:
-            in_context_examples = random.sample(train_data, K_SHOTS)
+            selected_examples = random.sample(train_data, K_SHOTS)
 
-        # Build the complex ICL prompt
-        icl_prompt = [ART_TEMPLATE]
-        examples_path = []
-        for i, example in enumerate(in_context_examples):
-            try:
-                icl_prompt.append(f"--- EXAMPLE {i+1} ---\n")
-                icl_prompt.append("IMAGE:")
-                icl_prompt.append(Image.open(example["image_path"]))
-                icl_prompt.append(f"CAPTION: {example['caption']}\n")
-                examples_path.append(example["image_path"])
-        
-            except FileNotFoundError:
-                print(f"Skipping example, image not found: {example['image_path']}")
-                continue
-        
-        icl_prompt.append("--- TARGET ---\n")
-        icl_prompt.append(f"Now, based on the style of the examples above, generate a new detailed description for an image with the following caption:\n")
-        icl_prompt.append(f"CAPTION: {test_caption}\n")
-        icl_prompt.append("DETAILED DESCRIPTION:")
+        # Optionally ensure the selected examples actually exist on disk;
+        # if not, drop them (or you could resample to keep K)
+        selected_examples = [e for e in selected_examples if os.path.exists(e["image_path"])]
+        if not selected_examples:
+            print("No usable examples found; skipping this test item.")
+            continue
 
+        n = len(selected_examples)
 
-        generated_description = generate_vlm_description(icl_prompt)
-        original_description = test_item["image_description"]
-        print(generated_description)
-        results.append({
-            "image_path": test_image_path,
-            "example_path" : examples_path,
-            "original_description": original_description,
-            "generated_description": generated_description
-        })
+        # Build permutations of the chosen set; if n==1 you'll just get one ordering
+        example_orders = list(itertools.permutations(selected_examples, n))
+        total_orders = len(example_orders)  # factorial(n)
+
+        for order_idx, example_order in enumerate(example_orders, start=1):
+            # Build a fresh prompt for THIS permutation only
+            icl_prompt = [ART_TEMPLATE]
+            examples_path = []
+            failed = False
+
+            for i, example in enumerate(example_order):
+                try:
+                    icl_prompt.append(f"--- EXAMPLE {i+1} ---\n")
+                    icl_prompt.append("IMAGE:")
+                    icl_prompt.append(Image.open(example["image_path"]))
+                    icl_prompt.append(f"CAPTION: {example['caption']}\n")
+                    examples_path.append(example["image_path"])
+                except FileNotFoundError:
+                    print(f"Skipping permutation {order_idx}/{total_orders}: image not found {example['image_path']}")
+                    failed = True
+                    break
+
+            if failed:
+                continue  # do not query VLM with a partial permutation
+
+            # Target block
+            icl_prompt.append("--- TARGET ---\n")
+            icl_prompt.append("Now, based on the style of the examples above, generate a new detailed description for an image with the following caption:\n")
+            icl_prompt.append(f"CAPTION: {test_caption}\n")
+            icl_prompt.append("DETAILED DESCRIPTION:")
+
+            # Query VLM ONCE for this ordering
+            generated_description = generate_vlm_description(icl_prompt)
+            original_description = test_item.get("image_description")
+
+            print(f"[{order_idx}/{total_orders}] test_image={os.path.basename(test_image_path)}")
+            print(generated_description)
+
+            results.append({
+                "image_path": test_image_path,
+                "k_shots_used": n,
+                "permutation_index": order_idx - 1,       # zero-based index if you need it
+                "example_paths": examples_path,
+                "original_description": original_description,
+                "generated_description": generated_description
+            })
+
 
     artist_name = os.path.splitext(os.path.basename(args.dataset))[0]
     output_path = f"{OUTPUT_DIR}/top_{args.k_shots}_{artist_name}_gemma.json"
