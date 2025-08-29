@@ -1,0 +1,62 @@
+[
+    {
+        "image_path": "dataset/artist/mondrian/place-de-la-concorde.jpg",
+        "example_paths": [
+            "dataset/artist/mondrian/composition-light-color-planes-with-grey-contours.jpg",
+            "dataset/artist/mondrian/composition-with-gray.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.06413289424304337,
+        "ROUGE": {
+            "rouge1": 0.4384384384384385,
+            "rougeL": 0.20420420420420418
+        },
+        "BERTScore": 0.2153991311788559,
+        "Cosine Similarity": 0.6392921209335327
+    },
+    {
+        "image_path": "dataset/artist/mondrian/place-de-la-concorde.jpg",
+        "example_paths": [
+            "dataset/artist/mondrian/composition-with-gray.jpg",
+            "dataset/artist/mondrian/composition-light-color-planes-with-grey-contours.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.04920022225959457,
+        "ROUGE": {
+            "rouge1": 0.43887147335423193,
+            "rougeL": 0.20062695924764892
+        },
+        "BERTScore": 0.2403744012117386,
+        "Cosine Similarity": 0.6404503583908081
+    },
+    {
+        "image_path": "dataset/artist/mondrian/composition-in-color.jpg",
+        "example_paths": [
+            "dataset/artist/mondrian/composition-with-oval-in-color-planes.jpg",
+            "dataset/artist/mondrian/tableau-i-1921.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.02468230496443977,
+        "ROUGE": {
+            "rouge1": 0.38620689655172413,
+            "rougeL": 0.2206896551724138
+        },
+        "BERTScore": 0.20189987123012543,
+        "Cosine Similarity": 0.7376606464385986
+    },
+    {
+        "image_path": "dataset/artist/mondrian/composition-in-color.jpg",
+        "example_paths": [
+            "dataset/artist/mondrian/tableau-i-1921.jpg",
+            "dataset/artist/mondrian/composition-with-oval-in-color-planes.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.019202232945477977,
+        "ROUGE": {
+            "rouge1": 0.46464646464646464,
+            "rougeL": 0.20202020202020202
+        },
+        "BERTScore": 0.26558592915534973,
+        "Cosine Similarity": 0.7995288372039795
+    }
+]

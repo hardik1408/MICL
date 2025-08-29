@@ -1,0 +1,92 @@
+[
+    {
+        "image_path": "dataset/artist/monet/irises-in-monets-garden.jpg",
+        "example_paths": [
+            "dataset/artist/monet/three-trees-in-grey-weather.jpg",
+            "dataset/artist/monet/haystacks-at-giverny.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.033136763931754694,
+        "ROUGE": {
+            "rouge1": 0.42597402597402595,
+            "rougeL": 0.18701298701298705
+        },
+        "BERTScore": 0.20200935006141663,
+        "Cosine Similarity": 0.6104135513305664
+    },
+    {
+        "image_path": "dataset/artist/monet/irises-in-monets-garden.jpg",
+        "example_paths": [
+            "dataset/artist/monet/haystacks-at-giverny.jpg",
+            "dataset/artist/monet/three-trees-in-grey-weather.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.03940902562788056,
+        "ROUGE": {
+            "rouge1": 0.43425076452599387,
+            "rougeL": 0.19571865443425074
+        },
+        "BERTScore": 0.2252703607082367,
+        "Cosine Similarity": 0.6519178152084351
+    },
+    {
+        "image_path": "dataset/artist/monet/antibes-in-the-morning.jpg",
+        "example_paths": [
+            "dataset/artist/monet/waterloo-bridge-london.jpg",
+            "dataset/artist/monet/water-lilies-evening-effect.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.031390754937258215,
+        "ROUGE": {
+            "rouge1": 0.46107784431137716,
+            "rougeL": 0.2215568862275449
+        },
+        "BERTScore": 0.2250252664089203,
+        "Cosine Similarity": 0.6529857516288757
+    },
+    {
+        "image_path": "dataset/artist/monet/antibes-in-the-morning.jpg",
+        "example_paths": [
+            "dataset/artist/monet/water-lilies-evening-effect.jpg",
+            "dataset/artist/monet/waterloo-bridge-london.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.05652890196535127,
+        "ROUGE": {
+            "rouge1": 0.4712990936555891,
+            "rougeL": 0.19939577039274925
+        },
+        "BERTScore": 0.2335304617881775,
+        "Cosine Similarity": 0.6618552207946777
+    },
+    {
+        "image_path": "dataset/artist/monet/water-lily-pond.jpg",
+        "example_paths": [
+            "dataset/artist/monet/houses-of-parliament.jpg",
+            "dataset/artist/monet/impression-sunrise.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.03756501008925199,
+        "ROUGE": {
+            "rouge1": 0.4465408805031446,
+            "rougeL": 0.2138364779874214
+        },
+        "BERTScore": 0.20253944396972656,
+        "Cosine Similarity": 0.5709111094474792
+    },
+    {
+        "image_path": "dataset/artist/monet/water-lily-pond.jpg",
+        "example_paths": [
+            "dataset/artist/monet/impression-sunrise.jpg",
+            "dataset/artist/monet/houses-of-parliament.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.02719424176137255,
+        "ROUGE": {
+            "rouge1": 0.40123456790123463,
+            "rougeL": 0.2037037037037037
+        },
+        "BERTScore": 0.2366849184036255,
+        "Cosine Similarity": 0.6065972447395325
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "image_path": "dataset/artist/mondrian/place-de-la-concorde.jpg",
+        "example_paths": [
+            "dataset/artist/mondrian/composition-with-gray.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.040253917182985,
+        "ROUGE": {
+            "rouge1": 0.49696969696969695,
+            "rougeL": 0.2181818181818182
+        },
+        "BERTScore": 0.27780672907829285,
+        "Cosine Similarity": 0.6839441061019897
+    },
+    {
+        "image_path": "dataset/artist/mondrian/composition-in-color.jpg",
+        "example_paths": [
+            "dataset/artist/mondrian/tableau-i-1921.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.02217548156707692,
+        "ROUGE": {
+            "rouge1": 0.36120401337792635,
+            "rougeL": 0.16722408026755856
+        },
+        "BERTScore": 0.16227580606937408,
+        "Cosine Similarity": 0.6520789861679077
+    }
+]
