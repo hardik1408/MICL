@@ -1,0 +1,13 @@
+=== Overall Metrics Summary ===
+BLEU: {'mean': 0.03244077294182322, 'median': 0.03244077294182322, 'min': 0.028223399525971832, 'max': 0.036658146357674615, 'variance': 1.7786238528730034e-05}
+ROUGE-1: {'mean': 0.4266563768364489, 'median': 0.4266563768364489, 'min': 0.402332361516035, 'max': 0.4509803921568628, 'variance': 0.0005916577213077298}
+ROUGE-L: {'mean': 0.23753310848148784, 'median': 0.23753310848148784, 'min': 0.23323615160349856, 'max': 0.24183006535947713, 'variance': 1.8463838411299407e-05}
+BERTScore: {'mean': 0.1944412663578987, 'median': 0.1944412663578987, 'min': 0.1777520626783371, 'max': 0.21113047003746033, 'variance': 0.00027852951945789295}
+Cosine Similarity: {'mean': 0.6556342840194702, 'median': 0.6556342840194702, 'min': 0.6353476047515869, 'max': 0.6759209632873535, 'variance': 0.00041154935571796614}
+
+=== Permutation Sensitivity (effect of changing order) ===
+BLEU: {'mean_increase': 0.0, 'max_increase': 0.0, 'median_increase': 0.0}
+ROUGE-1: {'mean_increase': 0.0, 'max_increase': 0.0, 'median_increase': 0.0}
+ROUGE-L: {'mean_increase': 0.0, 'max_increase': 0.0, 'median_increase': 0.0}
+BERTScore: {'mean_increase': 0.0, 'max_increase': 0.0, 'median_increase': 0.0}
+Cosine Similarity: {'mean_increase': 0.0, 'max_increase': 0.0, 'median_increase': 0.0}
