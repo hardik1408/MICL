@@ -1,9 +1,0 @@
-{
-  "image_paths": [
-    "dataset/artist/frida/1.jpg",
-    "dataset/artist/frida/2.jpg",
-    "dataset/artist/frida/3.png"
-  ],
-  "target_subject": "A young girl with a slight dark complexion, wearing an olive dress with red dots, sitting on a chair. The background is half purple and half yellow.",
-  "response": "A painting in the style of a flattened, almost naive portraiture, utilizing bold, saturated color fields as backdrops \u2013 often blues, greens, and reds \u2013 that are applied with visible, textured brushstrokes. Light is diffused and even, minimizing strong shadows and creating a sense of flatness, while forms are defined by strong outlines and simplified shapes. The overall texture appears slightly grainy and imperfect, lending a handcrafted quality. The mood is one of quiet dignity and melancholic introspection, with a sense of stillness and emotional reserve, despite the vibrancy of the color palette. A young girl with a slight dark complexion, wearing an olive dress with red dots, sitting on a chair. The background is half purple and half yellow."
-}

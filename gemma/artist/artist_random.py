@@ -53,12 +53,11 @@ def main():
     train_data, test_data = train_test_split(
         dataset, test_size=TEST_SET_SIZE, random_state=RANDOM_STATE
     )
-    print(f"Dataset split: {len(train_data)} training items, {len(test_data)} testing items.")
 
     results = []
     
 
-    for test_item in tqdm(test_data, desc=" Processing Test Examples"):
+    for test_item in tqdm(dataset, desc=" Processing Test Examples"):
         test_image_path = test_item["image_path"]
         test_caption = test_item["caption"]
 
