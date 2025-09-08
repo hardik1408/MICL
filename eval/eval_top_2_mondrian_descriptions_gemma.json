@@ -1,62 +1,302 @@
 [
     {
-        "image_path": "dataset/artist/mondrian/place-de-la-concorde.jpg",
+        "image_path": "dataset/artist/mondrian/broadway-boogie-woogie.jpg",
         "example_paths": [
             "dataset/artist/mondrian/composition-light-color-planes-with-grey-contours.jpg",
-            "dataset/artist/mondrian/composition-with-gray.jpg"
+            "dataset/artist/mondrian/composition-with-oval-in-color-planes.jpg"
         ],
         "permutation_index": 0,
-        "BLEU": 0.06413289424304337,
+        "BLEU": 0.033537024526992705,
         "ROUGE": {
-            "rouge1": 0.4384384384384385,
-            "rougeL": 0.20420420420420418
+            "rouge1": 0.4154302670623145,
+            "rougeL": 0.20771513353115725
         },
-        "BERTScore": 0.2153991311788559,
-        "Cosine Similarity": 0.6392921209335327
+        "BERTScore": 0.20081743597984314,
+        "Cosine Similarity": 0.6348705291748047
     },
     {
-        "image_path": "dataset/artist/mondrian/place-de-la-concorde.jpg",
+        "image_path": "dataset/artist/mondrian/broadway-boogie-woogie.jpg",
         "example_paths": [
-            "dataset/artist/mondrian/composition-with-gray.jpg",
+            "dataset/artist/mondrian/composition-with-oval-in-color-planes.jpg",
             "dataset/artist/mondrian/composition-light-color-planes-with-grey-contours.jpg"
         ],
         "permutation_index": 1,
-        "BLEU": 0.04920022225959457,
+        "BLEU": 0.0253001986065571,
         "ROUGE": {
-            "rouge1": 0.43887147335423193,
-            "rougeL": 0.20062695924764892
+            "rouge1": 0.4334365325077399,
+            "rougeL": 0.22910216718266252
         },
-        "BERTScore": 0.2403744012117386,
-        "Cosine Similarity": 0.6404503583908081
+        "BERTScore": 0.24020381271839142,
+        "Cosine Similarity": 0.626921534538269
     },
     {
         "image_path": "dataset/artist/mondrian/composition-in-color.jpg",
+        "example_paths": [
+            "dataset/artist/mondrian/composition-no-10.jpg",
+            "dataset/artist/mondrian/composition-light-color-planes-with-grey-contours.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.0498368223677982,
+        "ROUGE": {
+            "rouge1": 0.459546925566343,
+            "rougeL": 0.23300970873786406
+        },
+        "BERTScore": 0.24351894855499268,
+        "Cosine Similarity": 0.7426362633705139
+    },
+    {
+        "image_path": "dataset/artist/mondrian/composition-in-color.jpg",
+        "example_paths": [
+            "dataset/artist/mondrian/composition-light-color-planes-with-grey-contours.jpg",
+            "dataset/artist/mondrian/composition-no-10.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.04483556747722304,
+        "ROUGE": {
+            "rouge1": 0.4452054794520548,
+            "rougeL": 0.2328767123287671
+        },
+        "BERTScore": 0.23038838803768158,
+        "Cosine Similarity": 0.7032574415206909
+    },
+    {
+        "image_path": "dataset/artist/mondrian/composition-light-color-planes-with-grey-contours.jpg",
+        "example_paths": [
+            "dataset/artist/mondrian/broadway-boogie-woogie.jpg",
+            "dataset/artist/mondrian/composition-light-color-planes-with-grey-contours.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.02235543704833804,
+        "ROUGE": {
+            "rouge1": 0.41846153846153844,
+            "rougeL": 0.16
+        },
+        "BERTScore": 0.2201971858739853,
+        "Cosine Similarity": 0.7734134197235107
+    },
+    {
+        "image_path": "dataset/artist/mondrian/composition-light-color-planes-with-grey-contours.jpg",
+        "example_paths": [
+            "dataset/artist/mondrian/composition-light-color-planes-with-grey-contours.jpg",
+            "dataset/artist/mondrian/broadway-boogie-woogie.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.040371446506352604,
+        "ROUGE": {
+            "rouge1": 0.46822742474916385,
+            "rougeL": 0.21404682274247488
+        },
+        "BERTScore": 0.23636141419410706,
+        "Cosine Similarity": 0.7006818056106567
+    },
+    {
+        "image_path": "dataset/artist/mondrian/composition-no-10.jpg",
+        "example_paths": [
+            "dataset/artist/mondrian/broadway-boogie-woogie.jpg",
+            "dataset/artist/mondrian/composition-with-gray.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.024583139012675156,
+        "ROUGE": {
+            "rouge1": 0.4569892473118279,
+            "rougeL": 0.18279569892473116
+        },
+        "BERTScore": 0.19768241047859192,
+        "Cosine Similarity": 0.7305054664611816
+    },
+    {
+        "image_path": "dataset/artist/mondrian/composition-no-10.jpg",
+        "example_paths": [
+            "dataset/artist/mondrian/composition-with-gray.jpg",
+            "dataset/artist/mondrian/broadway-boogie-woogie.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.027531999538262082,
+        "ROUGE": {
+            "rouge1": 0.4525993883792049,
+            "rougeL": 0.21406727828746178
+        },
+        "BERTScore": 0.22278304398059845,
+        "Cosine Similarity": 0.7093297243118286
+    },
+    {
+        "image_path": "dataset/artist/mondrian/composition-with-gray.jpg",
+        "example_paths": [
+            "dataset/artist/mondrian/new-york-city-i.jpg",
+            "dataset/artist/mondrian/composition-no-10.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.017814648430630374,
+        "ROUGE": {
+            "rouge1": 0.44012944983818775,
+            "rougeL": 0.1941747572815534
+        },
+        "BERTScore": 0.18701903522014618,
+        "Cosine Similarity": 0.6619949340820312
+    },
+    {
+        "image_path": "dataset/artist/mondrian/composition-with-gray.jpg",
+        "example_paths": [
+            "dataset/artist/mondrian/composition-no-10.jpg",
+            "dataset/artist/mondrian/new-york-city-i.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.022570588765463324,
+        "ROUGE": {
+            "rouge1": 0.42236024844720493,
+            "rougeL": 0.18633540372670807
+        },
+        "BERTScore": 0.18027858436107635,
+        "Cosine Similarity": 0.6303799152374268
+    },
+    {
+        "image_path": "dataset/artist/mondrian/composition-with-grid-vii.jpg",
         "example_paths": [
             "dataset/artist/mondrian/composition-with-oval-in-color-planes.jpg",
             "dataset/artist/mondrian/tableau-i-1921.jpg"
         ],
         "permutation_index": 0,
-        "BLEU": 0.02468230496443977,
+        "BLEU": 0.03480091926916353,
         "ROUGE": {
-            "rouge1": 0.38620689655172413,
-            "rougeL": 0.2206896551724138
+            "rouge1": 0.5201238390092879,
+            "rougeL": 0.21671826625386997
         },
-        "BERTScore": 0.20189987123012543,
-        "Cosine Similarity": 0.7376606464385986
+        "BERTScore": 0.2589563727378845,
+        "Cosine Similarity": 0.8147329688072205
     },
     {
-        "image_path": "dataset/artist/mondrian/composition-in-color.jpg",
+        "image_path": "dataset/artist/mondrian/composition-with-grid-vii.jpg",
         "example_paths": [
             "dataset/artist/mondrian/tableau-i-1921.jpg",
             "dataset/artist/mondrian/composition-with-oval-in-color-planes.jpg"
         ],
         "permutation_index": 1,
-        "BLEU": 0.019202232945477977,
+        "BLEU": 0.04170039078976468,
         "ROUGE": {
-            "rouge1": 0.46464646464646464,
-            "rougeL": 0.20202020202020202
+            "rouge1": 0.5,
+            "rougeL": 0.21621621621621626
         },
-        "BERTScore": 0.26558592915534973,
-        "Cosine Similarity": 0.7995288372039795
+        "BERTScore": 0.2520114481449127,
+        "Cosine Similarity": 0.7087650299072266
+    },
+    {
+        "image_path": "dataset/artist/mondrian/composition-with-oval-in-color-planes.jpg",
+        "example_paths": [
+            "dataset/artist/mondrian/composition-with-grid-vii.jpg",
+            "dataset/artist/mondrian/tableau-i-1921.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.05323587441796924,
+        "ROUGE": {
+            "rouge1": 0.4423076923076923,
+            "rougeL": 0.23076923076923078
+        },
+        "BERTScore": 0.25875401496887207,
+        "Cosine Similarity": 0.6529218554496765
+    },
+    {
+        "image_path": "dataset/artist/mondrian/composition-with-oval-in-color-planes.jpg",
+        "example_paths": [
+            "dataset/artist/mondrian/tableau-i-1921.jpg",
+            "dataset/artist/mondrian/composition-with-grid-vii.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.03663132938487989,
+        "ROUGE": {
+            "rouge1": 0.43037974683544306,
+            "rougeL": 0.18354430379746833
+        },
+        "BERTScore": 0.22402016818523407,
+        "Cosine Similarity": 0.6366504430770874
+    },
+    {
+        "image_path": "dataset/artist/mondrian/new-york-city-i.jpg",
+        "example_paths": [
+            "dataset/artist/mondrian/new-york-city-i.jpg",
+            "dataset/artist/mondrian/composition-with-gray.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.05108570025815601,
+        "ROUGE": {
+            "rouge1": 0.5389221556886228,
+            "rougeL": 0.25748502994011974
+        },
+        "BERTScore": 0.28305119276046753,
+        "Cosine Similarity": 0.7696590423583984
+    },
+    {
+        "image_path": "dataset/artist/mondrian/new-york-city-i.jpg",
+        "example_paths": [
+            "dataset/artist/mondrian/composition-with-gray.jpg",
+            "dataset/artist/mondrian/new-york-city-i.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.06325461986120745,
+        "ROUGE": {
+            "rouge1": 0.44970414201183434,
+            "rougeL": 0.20710059171597633
+        },
+        "BERTScore": 0.2499270737171173,
+        "Cosine Similarity": 0.671542227268219
+    },
+    {
+        "image_path": "dataset/artist/mondrian/place-de-la-concorde.jpg",
+        "example_paths": [
+            "dataset/artist/mondrian/tableau-i-1921.jpg",
+            "dataset/artist/mondrian/composition-with-gray.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.04188890027675055,
+        "ROUGE": {
+            "rouge1": 0.4807692307692308,
+            "rougeL": 0.1923076923076923
+        },
+        "BERTScore": 0.26621347665786743,
+        "Cosine Similarity": 0.6403743624687195
+    },
+    {
+        "image_path": "dataset/artist/mondrian/place-de-la-concorde.jpg",
+        "example_paths": [
+            "dataset/artist/mondrian/composition-with-gray.jpg",
+            "dataset/artist/mondrian/tableau-i-1921.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.03447671226753921,
+        "ROUGE": {
+            "rouge1": 0.4967741935483871,
+            "rougeL": 0.19354838709677416
+        },
+        "BERTScore": 0.26535460352897644,
+        "Cosine Similarity": 0.756862998008728
+    },
+    {
+        "image_path": "dataset/artist/mondrian/tableau-i-1921.jpg",
+        "example_paths": [
+            "dataset/artist/mondrian/composition-with-grid-vii.jpg",
+            "dataset/artist/mondrian/composition-light-color-planes-with-grey-contours.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.03978902507537662,
+        "ROUGE": {
+            "rouge1": 0.5497076023391813,
+            "rougeL": 0.22222222222222224
+        },
+        "BERTScore": 0.31510981917381287,
+        "Cosine Similarity": 0.6663821935653687
+    },
+    {
+        "image_path": "dataset/artist/mondrian/tableau-i-1921.jpg",
+        "example_paths": [
+            "dataset/artist/mondrian/composition-light-color-planes-with-grey-contours.jpg",
+            "dataset/artist/mondrian/composition-with-grid-vii.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.06642915358919435,
+        "ROUGE": {
+            "rouge1": 0.5014577259475219,
+            "rougeL": 0.22157434402332363
+        },
+        "BERTScore": 0.27716079354286194,
+        "Cosine Similarity": 0.6360929012298584
     }
 ]

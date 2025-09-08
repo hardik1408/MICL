@@ -1,0 +1,142 @@
+[
+    {
+        "image_path": "dataset/artist/keeffe/blue-morning-glories.jpg",
+        "example_paths": [
+            "dataset/artist/keeffe/abstraction-white-rose.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.04170606725579923,
+        "ROUGE": {
+            "rouge1": 0.43195266272189353,
+            "rougeL": 0.242603550295858
+        },
+        "BERTScore": 0.2080696076154709,
+        "Cosine Similarity": 0.7283439636230469
+    },
+    {
+        "image_path": "dataset/artist/keeffe/abstraction-white-rose.jpg",
+        "example_paths": [
+            "dataset/artist/keeffe/blue-morning-glories.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.05079848093020342,
+        "ROUGE": {
+            "rouge1": 0.44314868804664725,
+            "rougeL": 0.22740524781341107
+        },
+        "BERTScore": 0.17093710601329803,
+        "Cosine Similarity": 0.6503420472145081
+    },
+    {
+        "image_path": "dataset/artist/keeffe/grey-line-with-black-blue.jpg",
+        "example_paths": [
+            "dataset/artist/keeffe/abstraction-white-rose.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.03919053871507946,
+        "ROUGE": {
+            "rouge1": 0.4537313432835821,
+            "rougeL": 0.20298507462686569
+        },
+        "BERTScore": 0.19719044864177704,
+        "Cosine Similarity": 0.5741304159164429
+    },
+    {
+        "image_path": "dataset/artist/keeffe/from-the-lake.jpg",
+        "example_paths": [
+            "dataset/artist/keeffe/music-pink-and-blue-ii.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.07543207839639875,
+        "ROUGE": {
+            "rouge1": 0.4427480916030534,
+            "rougeL": 0.2035623409669211
+        },
+        "BERTScore": 0.2090792953968048,
+        "Cosine Similarity": 0.5601683855056763
+    },
+    {
+        "image_path": "dataset/artist/keeffe/jimson-weed.jpg",
+        "example_paths": [
+            "dataset/artist/keeffe/blue-morning-glories.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.04687637853326248,
+        "ROUGE": {
+            "rouge1": 0.4246153846153846,
+            "rougeL": 0.20923076923076922
+        },
+        "BERTScore": 0.2179030478000641,
+        "Cosine Similarity": 0.5826168060302734
+    },
+    {
+        "image_path": "dataset/artist/keeffe/light-of-iris.jpg",
+        "example_paths": [
+            "dataset/artist/keeffe/red-canna.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.04049711921563393,
+        "ROUGE": {
+            "rouge1": 0.40718562874251496,
+            "rougeL": 0.20359281437125748
+        },
+        "BERTScore": 0.20081071555614471,
+        "Cosine Similarity": 0.684197187423706
+    },
+    {
+        "image_path": "dataset/artist/keeffe/music-pink-and-blue-ii.jpg",
+        "example_paths": [
+            "dataset/artist/keeffe/from-the-lake.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.06907835722492145,
+        "ROUGE": {
+            "rouge1": 0.39010989010989017,
+            "rougeL": 0.2032967032967033
+        },
+        "BERTScore": 0.20396409928798676,
+        "Cosine Similarity": 0.6692512631416321
+    },
+    {
+        "image_path": "dataset/artist/keeffe/oriental-poppies.jpg",
+        "example_paths": [
+            "dataset/artist/keeffe/red-canna.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.04127227228821652,
+        "ROUGE": {
+            "rouge1": 0.45584045584045585,
+            "rougeL": 0.20512820512820512
+        },
+        "BERTScore": 0.22644110023975372,
+        "Cosine Similarity": 0.6943180561065674
+    },
+    {
+        "image_path": "dataset/artist/keeffe/red-canna.jpg",
+        "example_paths": [
+            "dataset/artist/keeffe/blue-morning-glories.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.05441761530674801,
+        "ROUGE": {
+            "rouge1": 0.4133738601823709,
+            "rougeL": 0.22492401215805471
+        },
+        "BERTScore": 0.19555673003196716,
+        "Cosine Similarity": 0.7371035814285278
+    },
+    {
+        "image_path": "dataset/artist/keeffe/series-i-no-3.jpg",
+        "example_paths": [
+            "dataset/artist/keeffe/music-pink-and-blue-ii.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.059028536580967204,
+        "ROUGE": {
+            "rouge1": 0.49201277955271566,
+            "rougeL": 0.23003194888178913
+        },
+        "BERTScore": 0.26413124799728394,
+        "Cosine Similarity": 0.755670428276062
+    }
+]

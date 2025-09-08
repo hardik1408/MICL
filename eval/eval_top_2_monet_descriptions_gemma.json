@@ -1,92 +1,332 @@
 [
     {
-        "image_path": "dataset/artist/monet/irises-in-monets-garden.jpg",
+        "image_path": "dataset/artist/monet/antibes-in-the-morning.jpg",
         "example_paths": [
-            "dataset/artist/monet/three-trees-in-grey-weather.jpg",
-            "dataset/artist/monet/haystacks-at-giverny.jpg"
+            "dataset/artist/monet/waterloo-bridge-london.jpg",
+            "dataset/artist/monet/three-trees-in-grey-weather.jpg"
         ],
         "permutation_index": 0,
-        "BLEU": 0.033136763931754694,
+        "BLEU": 0.025768688900875407,
         "ROUGE": {
-            "rouge1": 0.42597402597402595,
-            "rougeL": 0.18701298701298705
+            "rouge1": 0.4240687679083095,
+            "rougeL": 0.22922636103151864
         },
-        "BERTScore": 0.20200935006141663,
-        "Cosine Similarity": 0.6104135513305664
+        "BERTScore": 0.22392693161964417,
+        "Cosine Similarity": 0.6607820987701416
+    },
+    {
+        "image_path": "dataset/artist/monet/antibes-in-the-morning.jpg",
+        "example_paths": [
+            "dataset/artist/monet/three-trees-in-grey-weather.jpg",
+            "dataset/artist/monet/waterloo-bridge-london.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.03577104846306458,
+        "ROUGE": {
+            "rouge1": 0.4606741573033708,
+            "rougeL": 0.19101123595505617
+        },
+        "BERTScore": 0.24898943305015564,
+        "Cosine Similarity": 0.665500283241272
+    },
+    {
+        "image_path": "dataset/artist/monet/autumn-on-the-seine.jpg",
+        "example_paths": [
+            "dataset/artist/monet/waterloo-bridge-london.jpg",
+            "dataset/artist/monet/poplars-at-giverny.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.04174577313691127,
+        "ROUGE": {
+            "rouge1": 0.4174454828660436,
+            "rougeL": 0.2118380062305296
+        },
+        "BERTScore": 0.2585219740867615,
+        "Cosine Similarity": 0.5547157526016235
+    },
+    {
+        "image_path": "dataset/artist/monet/autumn-on-the-seine.jpg",
+        "example_paths": [
+            "dataset/artist/monet/poplars-at-giverny.jpg",
+            "dataset/artist/monet/waterloo-bridge-london.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.029603975808950765,
+        "ROUGE": {
+            "rouge1": 0.41982507288629733,
+            "rougeL": 0.21574344023323613
+        },
+        "BERTScore": 0.25061750411987305,
+        "Cosine Similarity": 0.49334830045700073
+    },
+    {
+        "image_path": "dataset/artist/monet/haystacks-at-giverny.jpg",
+        "example_paths": [
+            "dataset/artist/monet/autumn-on-the-seine.jpg",
+            "dataset/artist/monet/houses-of-parliament.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.029900031338426128,
+        "ROUGE": {
+            "rouge1": 0.4324324324324324,
+            "rougeL": 0.19819819819819817
+        },
+        "BERTScore": 0.2162301242351532,
+        "Cosine Similarity": 0.6648135781288147
+    },
+    {
+        "image_path": "dataset/artist/monet/haystacks-at-giverny.jpg",
+        "example_paths": [
+            "dataset/artist/monet/houses-of-parliament.jpg",
+            "dataset/artist/monet/autumn-on-the-seine.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.025274542629991324,
+        "ROUGE": {
+            "rouge1": 0.44736842105263164,
+            "rougeL": 0.2210526315789474
+        },
+        "BERTScore": 0.2168121337890625,
+        "Cosine Similarity": 0.6434512138366699
+    },
+    {
+        "image_path": "dataset/artist/monet/houses-of-parliament.jpg",
+        "example_paths": [
+            "dataset/artist/monet/poplars-at-giverny.jpg",
+            "dataset/artist/monet/three-trees-in-grey-weather.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.06059847394250758,
+        "ROUGE": {
+            "rouge1": 0.4410876132930513,
+            "rougeL": 0.1933534743202417
+        },
+        "BERTScore": 0.22523115575313568,
+        "Cosine Similarity": 0.5933100581169128
+    },
+    {
+        "image_path": "dataset/artist/monet/houses-of-parliament.jpg",
+        "example_paths": [
+            "dataset/artist/monet/three-trees-in-grey-weather.jpg",
+            "dataset/artist/monet/poplars-at-giverny.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.03295200597320958,
+        "ROUGE": {
+            "rouge1": 0.4472843450479233,
+            "rougeL": 0.19808306709265172
+        },
+        "BERTScore": 0.21457026898860931,
+        "Cosine Similarity": 0.5880453586578369
+    },
+    {
+        "image_path": "dataset/artist/monet/impression-sunrise.jpg",
+        "example_paths": [
+            "dataset/artist/monet/three-trees-in-grey-weather.jpg",
+            "dataset/artist/monet/impression-sunrise.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.0920511314839704,
+        "ROUGE": {
+            "rouge1": 0.46645367412140576,
+            "rougeL": 0.23003194888178916
+        },
+        "BERTScore": 0.2838525176048279,
+        "Cosine Similarity": 0.5635749101638794
+    },
+    {
+        "image_path": "dataset/artist/monet/impression-sunrise.jpg",
+        "example_paths": [
+            "dataset/artist/monet/impression-sunrise.jpg",
+            "dataset/artist/monet/three-trees-in-grey-weather.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.07429683580262787,
+        "ROUGE": {
+            "rouge1": 0.47058823529411764,
+            "rougeL": 0.19607843137254902
+        },
+        "BERTScore": 0.2886632978916168,
+        "Cosine Similarity": 0.6532307863235474
     },
     {
         "image_path": "dataset/artist/monet/irises-in-monets-garden.jpg",
         "example_paths": [
             "dataset/artist/monet/haystacks-at-giverny.jpg",
-            "dataset/artist/monet/three-trees-in-grey-weather.jpg"
-        ],
-        "permutation_index": 1,
-        "BLEU": 0.03940902562788056,
-        "ROUGE": {
-            "rouge1": 0.43425076452599387,
-            "rougeL": 0.19571865443425074
-        },
-        "BERTScore": 0.2252703607082367,
-        "Cosine Similarity": 0.6519178152084351
-    },
-    {
-        "image_path": "dataset/artist/monet/antibes-in-the-morning.jpg",
-        "example_paths": [
-            "dataset/artist/monet/waterloo-bridge-london.jpg",
             "dataset/artist/monet/water-lilies-evening-effect.jpg"
         ],
         "permutation_index": 0,
-        "BLEU": 0.031390754937258215,
+        "BLEU": 0.027708644892857164,
         "ROUGE": {
-            "rouge1": 0.46107784431137716,
-            "rougeL": 0.2215568862275449
+            "rouge1": 0.38993710691823896,
+            "rougeL": 0.18867924528301885
         },
-        "BERTScore": 0.2250252664089203,
-        "Cosine Similarity": 0.6529857516288757
+        "BERTScore": 0.19771136343479156,
+        "Cosine Similarity": 0.6294395327568054
     },
     {
-        "image_path": "dataset/artist/monet/antibes-in-the-morning.jpg",
+        "image_path": "dataset/artist/monet/irises-in-monets-garden.jpg",
         "example_paths": [
             "dataset/artist/monet/water-lilies-evening-effect.jpg",
-            "dataset/artist/monet/waterloo-bridge-london.jpg"
+            "dataset/artist/monet/haystacks-at-giverny.jpg"
         ],
         "permutation_index": 1,
-        "BLEU": 0.05652890196535127,
+        "BLEU": 0.019232043427636594,
         "ROUGE": {
-            "rouge1": 0.4712990936555891,
-            "rougeL": 0.19939577039274925
+            "rouge1": 0.3641975308641975,
+            "rougeL": 0.19135802469135801
         },
-        "BERTScore": 0.2335304617881775,
-        "Cosine Similarity": 0.6618552207946777
+        "BERTScore": 0.17667563259601593,
+        "Cosine Similarity": 0.645239531993866
     },
     {
-        "image_path": "dataset/artist/monet/water-lily-pond.jpg",
-        "example_paths": [
-            "dataset/artist/monet/houses-of-parliament.jpg",
-            "dataset/artist/monet/impression-sunrise.jpg"
-        ],
-        "permutation_index": 0,
-        "BLEU": 0.03756501008925199,
-        "ROUGE": {
-            "rouge1": 0.4465408805031446,
-            "rougeL": 0.2138364779874214
-        },
-        "BERTScore": 0.20253944396972656,
-        "Cosine Similarity": 0.5709111094474792
-    },
-    {
-        "image_path": "dataset/artist/monet/water-lily-pond.jpg",
+        "image_path": "dataset/artist/monet/poplars-at-giverny.jpg",
         "example_paths": [
             "dataset/artist/monet/impression-sunrise.jpg",
-            "dataset/artist/monet/houses-of-parliament.jpg"
+            "dataset/artist/monet/three-trees-in-grey-weather.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.02721772021196096,
+        "ROUGE": {
+            "rouge1": 0.33128834355828224,
+            "rougeL": 0.18404907975460122
+        },
+        "BERTScore": 0.1618463546037674,
+        "Cosine Similarity": 0.6379492282867432
+    },
+    {
+        "image_path": "dataset/artist/monet/poplars-at-giverny.jpg",
+        "example_paths": [
+            "dataset/artist/monet/three-trees-in-grey-weather.jpg",
+            "dataset/artist/monet/impression-sunrise.jpg"
         ],
         "permutation_index": 1,
-        "BLEU": 0.02719424176137255,
+        "BLEU": 0.039879418915658764,
         "ROUGE": {
-            "rouge1": 0.40123456790123463,
-            "rougeL": 0.2037037037037037
+            "rouge1": 0.36532507739938086,
+            "rougeL": 0.1981424148606811
         },
-        "BERTScore": 0.2366849184036255,
-        "Cosine Similarity": 0.6065972447395325
+        "BERTScore": 0.21730338037014008,
+        "Cosine Similarity": 0.5158542990684509
+    },
+    {
+        "image_path": "dataset/artist/monet/three-trees-in-grey-weather.jpg",
+        "example_paths": [
+            "dataset/artist/monet/autumn-on-the-seine.jpg",
+            "dataset/artist/monet/three-trees-in-grey-weather.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.03627409079351928,
+        "ROUGE": {
+            "rouge1": 0.43902439024390244,
+            "rougeL": 0.21951219512195122
+        },
+        "BERTScore": 0.23087504506111145,
+        "Cosine Similarity": 0.6163139343261719
+    },
+    {
+        "image_path": "dataset/artist/monet/three-trees-in-grey-weather.jpg",
+        "example_paths": [
+            "dataset/artist/monet/three-trees-in-grey-weather.jpg",
+            "dataset/artist/monet/autumn-on-the-seine.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.030328916845247862,
+        "ROUGE": {
+            "rouge1": 0.4419889502762431,
+            "rougeL": 0.2099447513812155
+        },
+        "BERTScore": 0.2179676741361618,
+        "Cosine Similarity": 0.616564929485321
+    },
+    {
+        "image_path": "dataset/artist/monet/water-lilies-evening-effect.jpg",
+        "example_paths": [
+            "dataset/artist/monet/poplars-at-giverny.jpg",
+            "dataset/artist/monet/haystacks-at-giverny.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.02225025386182795,
+        "ROUGE": {
+            "rouge1": 0.4025157232704403,
+            "rougeL": 0.16981132075471697
+        },
+        "BERTScore": 0.19756127893924713,
+        "Cosine Similarity": 0.6127322912216187
+    },
+    {
+        "image_path": "dataset/artist/monet/water-lilies-evening-effect.jpg",
+        "example_paths": [
+            "dataset/artist/monet/haystacks-at-giverny.jpg",
+            "dataset/artist/monet/poplars-at-giverny.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.03224898551300684,
+        "ROUGE": {
+            "rouge1": 0.38181818181818183,
+            "rougeL": 0.16969696969696968
+        },
+        "BERTScore": 0.19775445759296417,
+        "Cosine Similarity": 0.5276988744735718
+    },
+    {
+        "image_path": "dataset/artist/monet/water-lily-pond.jpg",
+        "example_paths": [
+            "dataset/artist/monet/three-trees-in-grey-weather.jpg",
+            "dataset/artist/monet/autumn-on-the-seine.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.030446578018420645,
+        "ROUGE": {
+            "rouge1": 0.4368600682593856,
+            "rougeL": 0.23890784982935154
+        },
+        "BERTScore": 0.2599416971206665,
+        "Cosine Similarity": 0.5580689311027527
+    },
+    {
+        "image_path": "dataset/artist/monet/water-lily-pond.jpg",
+        "example_paths": [
+            "dataset/artist/monet/autumn-on-the-seine.jpg",
+            "dataset/artist/monet/three-trees-in-grey-weather.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.03635966613412534,
+        "ROUGE": {
+            "rouge1": 0.3893805309734514,
+            "rougeL": 0.21238938053097345
+        },
+        "BERTScore": 0.18706706166267395,
+        "Cosine Similarity": 0.5442995429039001
+    },
+    {
+        "image_path": "dataset/artist/monet/waterloo-bridge-london.jpg",
+        "example_paths": [
+            "dataset/artist/monet/three-trees-in-grey-weather.jpg",
+            "dataset/artist/monet/haystacks-at-giverny.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.022984505406428768,
+        "ROUGE": {
+            "rouge1": 0.40236686390532544,
+            "rougeL": 0.1952662721893491
+        },
+        "BERTScore": 0.23483292758464813,
+        "Cosine Similarity": 0.60994952917099
+    },
+    {
+        "image_path": "dataset/artist/monet/waterloo-bridge-london.jpg",
+        "example_paths": [
+            "dataset/artist/monet/haystacks-at-giverny.jpg",
+            "dataset/artist/monet/three-trees-in-grey-weather.jpg"
+        ],
+        "permutation_index": 1,
+        "BLEU": 0.04738953349101693,
+        "ROUGE": {
+            "rouge1": 0.4148606811145511,
+            "rougeL": 0.21671826625386997
+        },
+        "BERTScore": 0.22752495110034943,
+        "Cosine Similarity": 0.5872970819473267
     }
 ]

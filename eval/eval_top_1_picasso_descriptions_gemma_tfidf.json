@@ -1,0 +1,226 @@
+[
+    {
+        "image_path": "dataset/artist/picasso/a-boy-with-pipe-1905.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/woman-with-blue-hat-1901.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.022818807502941196,
+        "ROUGE": {
+            "rouge1": 0.3987915407854985,
+            "rougeL": 0.18731117824773413
+        },
+        "BERTScore": 0.19329366087913513,
+        "Cosine Similarity": 0.6323087215423584
+    },
+    {
+        "image_path": "dataset/artist/picasso/Le-reve-1932.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/woman-with-blue-hat-1901.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.04115457692825826,
+        "ROUGE": {
+            "rouge1": 0.35928143712574845,
+            "rougeL": 0.17964071856287422
+        },
+        "BERTScore": 0.1547001302242279,
+        "Cosine Similarity": 0.500731885433197
+    },
+    {
+        "image_path": "dataset/artist/picasso/alicante-view-of-boats.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/figures-at-the-seaside.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.02905246134593242,
+        "ROUGE": {
+            "rouge1": 0.32653061224489793,
+            "rougeL": 0.1836734693877551
+        },
+        "BERTScore": 0.17377440631389618,
+        "Cosine Similarity": 0.4968288838863373
+    },
+    {
+        "image_path": "dataset/artist/picasso/an-actor-1904.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/Le-reve-1932.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.023917649122060226,
+        "ROUGE": {
+            "rouge1": 0.3495702005730659,
+            "rougeL": 0.2005730659025788
+        },
+        "BERTScore": 0.11021478474140167,
+        "Cosine Similarity": 0.5362180471420288
+    },
+    {
+        "image_path": "dataset/artist/picasso/blue-nude-c-1902-u-l-e77lc0.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/the-death-of-casagemas-1901.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.029948198450507495,
+        "ROUGE": {
+            "rouge1": 0.40588235294117647,
+            "rougeL": 0.18823529411764708
+        },
+        "BERTScore": 0.20940491557121277,
+        "Cosine Similarity": 0.6873841285705566
+    },
+    {
+        "image_path": "dataset/artist/picasso/child-with-dove-1901.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/a-boy-with-pipe-1905.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.02720481345940663,
+        "ROUGE": {
+            "rouge1": 0.362116991643454,
+            "rougeL": 0.19498607242339833
+        },
+        "BERTScore": 0.20568859577178955,
+        "Cosine Similarity": 0.5485436916351318
+    },
+    {
+        "image_path": "dataset/artist/picasso/dora-maar-1939.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/weeping-woman.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.02695182883351533,
+        "ROUGE": {
+            "rouge1": 0.38977635782747605,
+            "rougeL": 0.19808306709265178
+        },
+        "BERTScore": 0.16553689539432526,
+        "Cosine Similarity": 0.6390717029571533
+    },
+    {
+        "image_path": "dataset/artist/picasso/fairground-1900.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/girl-in-front-of-mirror-1932.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.033198262200221575,
+        "ROUGE": {
+            "rouge1": 0.37057220708446864,
+            "rougeL": 0.1798365122615804
+        },
+        "BERTScore": 0.16698592901229858,
+        "Cosine Similarity": 0.6054586172103882
+    },
+    {
+        "image_path": "dataset/artist/picasso/family-of-acrobats-jugglers-1905.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/guernica.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.028892171787646373,
+        "ROUGE": {
+            "rouge1": 0.37017994858611825,
+            "rougeL": 0.15938303341902313
+        },
+        "BERTScore": 0.1062830314040184,
+        "Cosine Similarity": 0.6124137043952942
+    },
+    {
+        "image_path": "dataset/artist/picasso/figures-at-the-seaside.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/alicante-view-of-boats.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.03759861253567089,
+        "ROUGE": {
+            "rouge1": 0.3375796178343949,
+            "rougeL": 0.1656050955414013
+        },
+        "BERTScore": 0.1872107982635498,
+        "Cosine Similarity": 0.5345651507377625
+    },
+    {
+        "image_path": "dataset/artist/picasso/girl-in-front-of-mirror-1932.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/a-boy-with-pipe-1905.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.02334023182153071,
+        "ROUGE": {
+            "rouge1": 0.32258064516129026,
+            "rougeL": 0.18181818181818185
+        },
+        "BERTScore": 0.0987059473991394,
+        "Cosine Similarity": 0.5609406232833862
+    },
+    {
+        "image_path": "dataset/artist/picasso/guernica.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/family-of-acrobats-jugglers-1905.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.020862243709512694,
+        "ROUGE": {
+            "rouge1": 0.35777126099706746,
+            "rougeL": 0.1759530791788856
+        },
+        "BERTScore": 0.18373428285121918,
+        "Cosine Similarity": 0.5888124108314514
+    },
+    {
+        "image_path": "dataset/artist/picasso/portrait-of-the-artist-1903.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/woman-with-blue-hat-1901.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.022446878805764098,
+        "ROUGE": {
+            "rouge1": 0.42191780821917807,
+            "rougeL": 0.21369863013698634
+        },
+        "BERTScore": 0.1720552146434784,
+        "Cosine Similarity": 0.6480226516723633
+    },
+    {
+        "image_path": "dataset/artist/picasso/the-death-of-casagemas-1901.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/blue-nude-c-1902-u-l-e77lc0.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.019729037830663602,
+        "ROUGE": {
+            "rouge1": 0.38271604938271603,
+            "rougeL": 0.20987654320987653
+        },
+        "BERTScore": 0.22187471389770508,
+        "Cosine Similarity": 0.6423001885414124
+    },
+    {
+        "image_path": "dataset/artist/picasso/weeping-woman.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/dora-maar-1939.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.014130355648934907,
+        "ROUGE": {
+            "rouge1": 0.3736263736263736,
+            "rougeL": 0.18315018315018317
+        },
+        "BERTScore": 0.20192953944206238,
+        "Cosine Similarity": 0.6140782833099365
+    },
+    {
+        "image_path": "dataset/artist/picasso/woman-with-blue-hat-1901.jpg",
+        "example_paths": [
+            "dataset/artist/picasso/a-boy-with-pipe-1905.jpg"
+        ],
+        "permutation_index": 0,
+        "BLEU": 0.02057647256473449,
+        "ROUGE": {
+            "rouge1": 0.3843843843843844,
+            "rougeL": 0.21621621621621623
+        },
+        "BERTScore": 0.20392172038555145,
+        "Cosine Similarity": 0.5734506845474243
+    }
+]
