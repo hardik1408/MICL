@@ -1,10 +1,27 @@
 TARGET_SUBJECT = "A young girl with a slight dark complexion, wearing an olive dress with red dots, sitting on a chair. The background is half purple and half yellow."
 
+CAPTION_PROMPT = """
+Provide a short, single-sentence caption that plainly summarizes what is shown in the given image, as if for an alt text. Do not use artistic or technical terms—just state the visible content in a neutral way.
+ONLY RETURN THE ONE-LINE CAPTION, NO EXTRA TEXT.
+"""
+
+STYLE_DESCRIPTION_PROMPT = """
+You are an expert art critic. Carefully analyze the given image and describe it in a single, detailed paragraph focusing on its artistic characteristics.
+Discuss:
+- Color palette (dominant and secondary tones)
+- Lighting qualities (soft, harsh, dramatic, natural, etc.)
+- Textures (brushstrokes, smoothness, grain, etc.)
+- Mood or atmosphere conveyed
+- Composition and how these elements interact to shape the visual experience
+Do NOT mention any specific objects, people, or places depicted in the image. Avoid the artist's name, painting title, or broader style categories. Capture the artistic style and feeling, not the content or subject matter.
+ONLY RETURN THE FINAL DESCRIPTION, NO EXTRA TEXT.
+"""
+
 ART_TEMPLATE = f"""
-You are shown several reference paintings by an artist, each with a caption. From these, learn the artist’s style—their use of color, composition, mood, textures, and recurring themes. 
+You are shown several reference paintings by an artist, each with a caption. From these, learn the artist’s style—their use of color, composition, textures, and recurring themes. 
 Then, given a new test caption, generate a detailed description of what the painting would look like if created by the same artist. 
 Your description should go beyond the literal subject, capturing atmosphere, stylistic traits, and symbolic choices characteristic of the artist.
-Do not add any redundant text or any kind of heading, just give the detailed description.
+Do not do any kind of semantic analysis, focus on distinct details. Do not add any redundant text or any kind of heading, just give the detailed description.
 """
 TARGET_DESCRIPTION = "A girl is sitting in a park. The horse is on her left."
 SPATIAL_TEMPLATE = f"""
