@@ -12,3 +12,9 @@ To run evaluation, use `eval.py`
 ```
 python eval.py --dataset generated/top_1_keeffe_descriptions_gemma.json    
 ```
+
+To run the server:
+```
+python -m vllm.entrypoints.openai.api_server     --model meta-llama/Llama-3.2-11B-Vision --port 8000 --gpu-memory-utilization 0.45
+--max_num_seqs 16 --max-model-len 4000 --chat-template llama3.2_json.jinja --limit-mm-per-prompt '{"image":2}'
+```
