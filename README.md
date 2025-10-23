@@ -18,3 +18,7 @@ To run the server:
 python -m vllm.entrypoints.openai.api_server     --model meta-llama/Llama-3.2-11B-Vision --port 8000 --gpu-memory-utilization 0.45
 --max_num_seqs 16 --max-model-len 4000 --chat-template llama3.2_json.jinja --limit-mm-per-prompt '{"image":2}'
 ```
+To run Qwen:
+```
+python -m vllm.entrypoints.openai.api_server     --model Qwen/Qwen2.5-VL-7B-Instruct     --host 0.0.0.0     --port 8000
+```
